@@ -38,6 +38,12 @@ bool sort_refs(int& a, int& b)
         }
         return true;
     }
+            // can do this also its simple
+            //bool changes = false;
+            //changes = sort_refs(a, c);
+            //changes |= sort_refs(a, b);
+            //changes |= sort_refs(b, c);
+            //return changes;
     return false;
     }
 }
