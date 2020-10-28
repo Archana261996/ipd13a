@@ -36,11 +36,7 @@ bool contains_prefix_sums(Int_vec const& summed, Int_vec const& unsummed)
 
     unsum_prefixes(temp);
 
-  if(temp == unsummed)
-      return true;
-  else
-      return false;
-
+  return temp == unsummed;
 }
 
 
