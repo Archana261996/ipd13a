@@ -15,7 +15,7 @@ void sum_prefixes(Int_vec& in_place)
 
 void unsum_prefixes(Int_vec& in_place)
 {
-    for(ssize_t i=in_place.size() - 1; i > 0 ; --i) {
+    for(ssize_t i = in_place.size() - 1 ; i > 0 ; --i) {
            in_place[i] = in_place[i] - in_place[i - 1];
     }
 }
