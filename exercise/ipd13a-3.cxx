@@ -15,11 +15,29 @@ using std::swap;
 
 bool sort_refs(int& a, int& b)
 {
-    // TODO: implement
+
+        if(a > b)
+        {
+            std::swap(a, b);
+            return true;
+        }
+        return false;
+
 }
-
-
-// TODO: implement sort_refs(int&, int&, int&)
-
-
+    bool sort_refs(int& a, int& b, int& c)
+    {
+    if(a > b || a > c || b > c) {
+        if (a > c) {
+            std::swap(a, c);
+        }
+        if (a > b) {
+            std::swap(a, b);
+        }
+        if (b > c) {
+            std::swap(b, c);
+        }
+        return true;
+    }
+    return false;
+    }
 }
