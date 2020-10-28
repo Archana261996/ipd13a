@@ -18,7 +18,7 @@ bool sort_refs(int& a, int& b)
 
         if(a > b)
         {
-            std::swap(a, b);
+            swap(a, b);
             return true;
         }
         return false;
@@ -28,13 +28,13 @@ bool sort_refs(int& a, int& b)
     {
     if(a > b || a > c || b > c) {
         if (a > c) {
-            std::swap(a, c);
+            swap(a, c);
         }
         if (a > b) {
-            std::swap(a, b);
+            swap(a, b);
         }
         if (b > c) {
-            std::swap(b, c);
+            swap(b, c);
         }
         return true;
     }

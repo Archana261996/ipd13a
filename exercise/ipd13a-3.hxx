@@ -37,13 +37,13 @@ bool sort_refs(T& a, T& b, T& c) {
         using std::swap;
         if(a > b || a > c || b > c) {
             if (a > c) {
-                std::swap(a, c);
+               swap(a, c);
             }
             if (a > b) {
-                std::swap(a, b);
+                swap(a, b);
             }
             if (b > c) {
-                std::swap(b, c);
+                swap(b, c);
             }
             return true;
         }

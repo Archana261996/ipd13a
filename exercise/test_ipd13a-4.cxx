@@ -40,6 +40,14 @@ TEST_CASE("sum_prefixes")
     sum_prefixes(v3);
     sum_prefixes(v3);
     CHECK(v3 == Int_vec{0, 0});
+//===================================================
+    Int_vec v4 {1};
+    sum_prefixes(v4);
+    CHECK(v4 == Int_vec{1});
+//===================================================
+    Int_vec v5 { };
+    sum_prefixes(v5);
+    CHECK(v5 == Int_vec{ });
 
 }
 
