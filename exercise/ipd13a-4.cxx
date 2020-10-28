@@ -6,7 +6,7 @@ namespace ipd
 
 void sum_prefixes(Int_vec& in_place)
 {
-    for(int i = 1; i < in_place.size(); ++i) {
+    for(size_t i = 1; i < in_place.size(); ++i) {
         in_place[i] = in_place[i] + in_place[i - 1];
     }
 
@@ -15,7 +15,7 @@ void sum_prefixes(Int_vec& in_place)
 
 void unsum_prefixes(Int_vec& in_place)
 {
-    for(int i=in_place.size() - 1; i > 0 ; --i) {
+    for(size_t i=in_place.size() - 1; i > 0 ; --i) {
            in_place[i] = in_place[i] - in_place[i - 1];
     }
 }
